@@ -6,20 +6,11 @@ args = parser.parse_args()
 
 
 # dataset path
-if 1:
-	ACC_NAME = os.getlogin()
-	ROOT_NAS = '/home/{}/nas'.format(ACC_NAME)
-	BSDS500 = os.path.join(ROOT_NAS, 'BSDS500/data/images')
-	SIDD_GT = os.path.join(ROOT_NAS, 'sidd/groundtruth')
-	SIDD_NOISY = os.path.join(ROOT_NAS, 'sidd/input')
-	SIDDPLUS_VALID_SRGB_GT = os.path.join(ROOT_NAS, 'siddplus/valid_srgb/gt')
-	SIDDPLUS_VALID_SRGB_NOISY = os.path.join(ROOT_NAS, 'siddplus/valid_srgb/noisy')
-else:
-	BSDS500 = 'test_images/BSDS500/data/images'
-	SIDD_GT = 'test_images/sidd/groundtruth'
-	SIDD_NOISY = 'test_images/sidd/input'
-	SIDDPLUS_VALID_SRGB_GT = 'test_images/siddplus/valid_srgb/gt'
-	SIDDPLUS_VALID_SRGB_NOISY = 'test_images/siddplus/valid_srgb/noisy'
+BSDS500 = 'test_images/BSDS500/data/images'
+SIDD_GT = 'test_images/sidd/groundtruth'
+SIDD_NOISY = 'test_images/sidd/input'
+SIDDPLUS_VALID_SRGB_GT = 'test_images/siddplus/valid_srgb/gt'
+SIDDPLUS_VALID_SRGB_NOISY = 'test_images/siddplus/valid_srgb/noisy'
 
 
 os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"

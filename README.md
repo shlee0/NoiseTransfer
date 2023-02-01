@@ -16,8 +16,8 @@ Deep image denoising networks have achieved impressive success with the help of 
 - Pytorch 1.10.0
 
 ### Install some packages
-- [piq](https://anaconda.org/photosynthesis-team/piq)
-- [ignite](https://anaconda.org/pytorch/ignite)
+- [piq](https://github.com/photosynthesis-team/piq)
+- [ignite](https://pytorch.org/ignite/)
 
 
 
